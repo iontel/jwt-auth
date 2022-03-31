@@ -87,10 +87,10 @@
     "minimum-stability": "dev",
     "scripts": {
         "post-package-install": [
-            "php artisan vendor:publish --tag=config --force"
+            "php artisan vendor:publish --tag=jwt-config --force"
         ],
         "post-package-update": [
-            "php artisan vendor:publish --tag=config --force"
+            "php artisan vendor:publish --tag=jwt-config --force"
         ],
         "php-cs-fixer": "php-cs-fixer fix --diff",
         "test": "phpunit --colors=always",
