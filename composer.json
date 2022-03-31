@@ -86,11 +86,11 @@
     "prefer-stable": true,
     "minimum-stability": "dev",
     "scripts": {
-        "post-package-install": [
-            "php artisan vendor:publish --tag=config --force"
+        "post-install-cmd": [
+            "php artisan vendor:publish --tag=config"
         ],
         "post-package-update": [
-            "php artisan vendor:publish --tag=config --force"
+            "php artisan vendor:publish --tag=config"
         ],
         "php-cs-fixer": "php-cs-fixer fix --diff",
         "test": "phpunit --colors=always",
